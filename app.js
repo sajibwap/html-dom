@@ -81,12 +81,11 @@ function calculateTotal_v2(){
 
     var totalArr = [0];
 
-	productTotal_Array.map((item) =>totalArr.push(item['innerText']));
+	productTotal_Array.map((item) =>totalArr.push(parseInt(item['innerText'])));
 
-    let total = totalArr.reduce((a,b)=>parseInt(a)+parseInt(b));
-
+    let total = totalArr.reduce((a,b)=>a+b);
 	let tax = Math.ceil(total / 10);
-	let afterTax = parseInt(total) + tax;
+	let afterTax = total + tax;
 	
 
 	document.getElementById('sub-total').innerText = total;
