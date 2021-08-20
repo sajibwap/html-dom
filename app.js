@@ -62,7 +62,8 @@ function updateCart(product,price,isIncreasing){
 
 document.querySelectorAll('.remove-item').forEach(item =>{
 	item.addEventListener('click',function(e){
-		e.path[3].remove();
+		//e.path[3].remove();
+		this.parentNode.parentNode.parentNode.remove();
 		calculateTotal_v2();
 	})
 })
