@@ -19,85 +19,91 @@
 				<div class="variant">
 					<div class="memory my-3">
 						<h3>Memory</h3>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="ram" type="radio" value="0" id="8GB">
-							<label for="8GB">8GB Unified Memory</label>
-						</span>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="ram" type="radio" value="100" id="16GB">
-							<label for="16GB">16GB Unified Memory</label>
-						</span>
+						<div class="option-name">
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="ram" type="radio" value="0" id="8GB">
+								<label for="8GB">8GB Unified Memory</label>
+							</span>
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="ram" type="radio" value="100" id="16GB">
+								<label for="16GB">16GB Unified Memory</label>
+							</span>
+						</div>
 					</div>
 					<div class="storage my-3">
 						<h3>Storage</h3>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="rom" type="radio" value="0" id="256GB">
-							<label for="256GB">256GB SSD Storage</label>
-						</span>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="rom" type="radio" value="100" id="512GB">
-							<label for="512GB">512GB SSD Storage</label>
-						</span>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="rom" type="radio" value="180" id="1TB">
-							<label for="1TB">1TB SSD Storage</label>
-						</span>
+						<div class="option-name">
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="rom" type="radio" value="0" id="256GB">
+								<label for="256GB">256GB SSD Storage</label>
+							</span>
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="rom" type="radio" value="100" id="512GB">
+								<label for="512GB">512GB SSD Storage</label>
+							</span>
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="rom" type="radio" value="180" id="1TB">
+								<label for="1TB">1TB SSD Storage</label>
+							</span>
+						</div>
 					</div>
 					<div class="shipping my-3">
 						<h3>Choose your delivery option</h3>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="shipping" type="radio" value="0" id="FREE">
-							<label for="FREE">Friday, Aug 25 FREE Prime Delivery</label>
-						</span>
-						<span class="btn btn-outline-primary btn-sm">
-							<input name="shipping" type="radio" value="20" id="PAID">
-							<label for="PAID">Friday, Aug 21 Delivery Charge $20</label>
-						</span>
-					</div>
-					</div>
-					<div class="price">
-						<table class="table">
-							<tr>
-								<td>Best Price</td>
-								<td>$ <span id="best-price">1299</span></td>
-							</tr>
-							<tr>
-								<td>Extra Memory Cost</td>
-								<td>$ <span id="memory-price">0</span></td>
-							</tr>
-							<tr>
-								<td>Extra Storage Cost</td>
-								<td>$ <span id="storage-price">0</span></td>
-							</tr>
-							<tr>
-								<td>Delivery Charge</td>
-								<td>$ <span id="delivery-price">0</span></td>
-							</tr>
-							<tr>
-								<td>Totale Price</td>
-								<td>$ <span id="total-price">1299</span></td>
-							</tr>
-						</table>
-					</div>
-					<div class="promo">
-						<h3>Add Promo Code</h3>
-						<form action="">
-							<span><input id="discount-input" type="text" name="promo" class="border border-primary"></span>
-							<span><input id="discount-btn" type="button" name="button" value="APPLY" class="btn btn-danger btn-sm"></span>
-						</form>
+						<div class="option-name">
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="shipping" type="radio" value="0" id="FREE">
+								<label for="FREE">Friday, Aug 25 FREE Prime Delivery</label>
+							</span>
+							<span class="btn btn-outline-secondary btn-sm">
+								<input class="d-none" name="shipping" type="radio" value="20" id="PAID">
+								<label for="PAID">Friday, Aug 21 Delivery Charge $20</label>
+							</span>
+						</div>
 					</div>
 				</div>
+				<div class="price">
+					<table class="table">
+						<tr>
+							<td>Best Price</td>
+							<td>$ <span id="best-price">1299</span></td>
+						</tr>
+						<tr>
+							<td>Extra Memory Cost</td>
+							<td>$ <span id="memory-price">0</span></td>
+						</tr>
+						<tr>
+							<td>Extra Storage Cost</td>
+							<td>$ <span id="storage-price">0</span></td>
+						</tr>
+						<tr>
+							<td>Delivery Charge</td>
+							<td>$ <span id="delivery-price">0</span></td>
+						</tr>
+						<tr>
+							<td>Totale Price</td>
+							<td>$ <span id="total-price">1299</span></td>
+						</tr>
+					</table>
+				</div>
+				<div class="promo">
+					<h3>Add Promo Code</h3>
+					<form action="">
+						<span><input id="discount-input" type="text" name="promo" class="border border-secondary"></span>
+						<span><input id="discount-btn" type="button" name="button" value="APPLY" class="btn btn-danger btn-sm"></span>
+					</form>
+				</div>
 			</div>
-			
 		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<hr>
-				<h1>Total: $ <span id="main-price">1299</span></h1>
-			</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<hr>
+			<h1>Total: $ <span id="main-price">1299</span></h1>
 		</div>
 	</div>
-	<script type="text/javascript" src="src/bootstrap.bundle.min.js" defer></script>
-	<script type="text/javascript" src="src/script.js" defer></script>
+</div>
+<script type="text/javascript" src="src/bootstrap.bundle.min.js" defer></script>
+<script type="text/javascript" src="src/script.js" defer></script>
 </body>
 </html>

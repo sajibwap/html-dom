@@ -25,11 +25,9 @@ function extraOption(eventHandler,_price){
 		item.addEventListener('click',function(e){
 			let price = e.target.value;
 			_price.innerText = price;
-			updateCart()
-			e.target.parentElement.nextSibling.classList.remove('btn-danger','text-white');
-			e.target.parentElement.previousElementSibling.classList.remove('btn-danger','text-white');
-			e.target.parentElement.classList.add('btn-danger','text-white');
-		})
+			updateCart();
+            updateClass(e);
+        })
 	})
 }
 
@@ -66,4 +64,12 @@ function totalAfterDiscount(){
         }
 
     })
+}
+
+function updateClass(src){
+  let el = src.target.parentElement.parentElement.children
+  for(item of el){
+    item.classList.remove('btn-danger','text-white')
+}
+src.target.parentElement.classList.add('btn-danger','text-white');
 }
